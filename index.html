@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encriptador - Alura</title>
+    <!-- google - fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- google - fonts -->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <main>
+        <div class="d_img">
+            <img src="img/Logo.svg" alt="Logo Alura" id="logo_alura">
+        </div>
+        <div class="d_encriptar">
+            <!-- <input type="text" name="texto" id="texto" placeholder="Ingrese el texto aquí"> -->
+            <textarea autofocus name="text" id="texto" placeholder="Ingrese el texto aqui" onkeyup="reset_b()"></textarea>
+            <div class="detalle" id="ErrorMsg">
+                <p> <img src="img/exclamacion.svg" alt="exclamacion"> Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <!-- <input type="button" class="boton" value="Encriptar" id="encriptar"> -->
+                <button class="boton" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton" id="Desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <!-- <input type="button" class="boton" value="Desencriptar" id="desencriptar"> -->
+            </div>
+        </div>
+        <div class="d_resultado">
+            <div class="d_mostrar">
+                <div class="d_resultado_hidden" id="d_resultado_h">
+                    <img src="img/person.svg" alt="persona con lupa" width="90%">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <div class="detalle">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </div>
+                </div>
+                <textarea name="text" id="texto2" placeholder="Ingrese el texto que desee desencriptar" readonly></textarea>
+                <button class="boton" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Desarrollado por Angel Barraza - Alura Latam</p>
+        <a href="https://www.linkedin.com/in/angel-barraza/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/Barry-2020" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="pgn" alt="icono GitHub"></a>
+        <a href="https://www.instagram.com/a.barry.c/" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" class="pgn" alt="icono Instagram"></a>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
